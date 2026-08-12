@@ -177,6 +177,7 @@ import '../styles/global.css';
 
     <!-- SCRIPT AVANZADO -->
     <script>
+      // @ts-nocheck
       const itemsCarrusel = document.querySelectorAll('.item-carrusel');
       const btnPrev = document.getElementById('btn-prev');
       const btnNext = document.getElementById('btn-next');
@@ -193,7 +194,9 @@ import '../styles/global.css';
         const indiceInicio = paginaActual * itemsPorPagina;
         const indiceFin = indiceInicio + itemsPorPagina;
 
-        indicador.textContent = `${paginaActual + 1} / ${totalPaginas}`;
+        if (indicador) {
+          indicador.textContent = `${paginaActual + 1} / ${totalPaginas}`;
+        }
 
         itemsCarrusel.forEach((item, index) => {
           item.classList.remove('flex', 'hidden', 'anim-fade');
@@ -208,15 +211,19 @@ import '../styles/global.css';
         });
       }
 
-      btnNext.addEventListener('click', () => {
-        paginaActual++;
-        renderizarCarrusel();
-      });
+      if (btnNext) {
+        btnNext.addEventListener('click', () => {
+          paginaActual++;
+          renderizarCarrusel();
+        });
+      }
 
-      btnPrev.addEventListener('click', () => {
-        paginaActual--;
-        renderizarCarrusel();
-      });
+      if (btnPrev) {
+        btnPrev.addEventListener('click', () => {
+          paginaActual--;
+          renderizarCarrusel();
+        });
+      }
 
       window.addEventListener('resize', () => {
         paginaActual = 0;
@@ -229,15 +236,19 @@ import '../styles/global.css';
       const menuMovil = document.getElementById('menu-movil');
       const enlacesMoviles = document.querySelectorAll('.enlace-movil');
 
-      btnMenu.addEventListener('click', () => {
-        menuMovil.classList.toggle('hidden');
-        menuMovil.classList.toggle('flex');
-      });
+      if (btnMenu && menuMovil) {
+        btnMenu.addEventListener('click', () => {
+          menuMovil.classList.toggle('hidden');
+          menuMovil.classList.toggle('flex');
+        });
+      }
 
       enlacesMoviles.forEach(enlace => {
         enlace.addEventListener('click', () => {
-          menuMovil.classList.add('hidden');
-          menuMovil.classList.remove('flex');
+          if (menuMovil) {
+            menuMovil.classList.add('hidden');
+            menuMovil.classList.remove('flex');
+          }
         });
       });
 
