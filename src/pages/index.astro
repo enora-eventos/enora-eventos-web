@@ -1,0 +1,284 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enora Eventos | Sonido e Iluminación Profesional</title>
+    <style>
+      @keyframes fadeInScale {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      .anim-fade {
+        animation: fadeInScale 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-zinc-950 text-white font-sans antialiased">
+    
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-sm border-b border-zinc-800 z-50">
+      <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="#inicio" class="enlace-nav text-2xl font-bold tracking-tighter">
+          ENORA<span class="text-blue-500">.</span>
+        </a>
+        <nav class="hidden md:flex gap-8 font-medium text-zinc-300">
+          <a href="#inicio" class="enlace-nav hover:text-white transition-colors">Inicio</a>
+          <a href="#equipamiento" class="enlace-nav hover:text-white transition-colors">Servicios</a>
+          <a href="#multimedia" class="enlace-nav hover:text-white transition-colors">Eventos</a>
+          <a href="#contacto" class="enlace-nav hover:text-white transition-colors">Contacto</a>
+          <a href="#ubicacion" class="enlace-nav hover:text-white transition-colors">Ubicación</a>
+        </nav>
+        <button id="btn-menu" class="md:hidden text-zinc-300 hover:text-white focus:outline-none" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <nav id="menu-movil" class="hidden absolute top-20 left-0 w-full bg-zinc-950/95 backdrop-blur-md border-b border-zinc-800 flex-col items-center py-6 gap-6 font-medium text-zinc-300 md:hidden z-40">
+        <a href="#inicio" class="enlace-nav enlace-movil hover:text-white text-lg">Inicio</a>
+        <a href="#equipamiento" class="enlace-nav enlace-movil hover:text-white text-lg">Servicios</a>
+        <a href="#multimedia" class="enlace-nav enlace-movil hover:text-white text-lg">Eventos</a>
+        <a href="#contacto" class="enlace-nav enlace-movil hover:text-white text-lg">Contacto</a>
+        <a href="#ubicacion" class="enlace-nav enlace-movil hover:text-white text-lg">Ubicación</a>
+      </nav>
+    </header>
+
+    <!-- SECCIÓN: INICIO -->
+    <section id="inicio" class="flex flex-col items-center justify-center min-h-screen text-center px-6 pt-20">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        ENORA <span class="text-blue-500">EVENTOS</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-zinc-400 max-w-2xl mb-10">
+        Alquiler de sonido e iluminación profesional de alta calidad en Mar del Plata. Elevamos el nivel de tu evento con tecnología de vanguardia.
+      </p>
+      <a href="#contacto" class="enlace-nav bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">
+        Solicitar Presupuesto
+      </a>
+    </section>
+
+    <!-- SECCIÓN: SERVICIOS Y EQUIPAMIENTO -->
+    <section id="equipamiento" class="min-h-[80vh] flex flex-col justify-center max-w-7xl mx-auto px-6 py-24 border-t border-zinc-900">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center md:text-left">Nuestros <span class="text-blue-500">Servicios</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <h3 class="text-xl font-bold mb-4">Sonido Profesional</h3>
+          <p class="text-zinc-400">Sistemas de audio activo de alta fidelidad, incluyendo altavoces JBL EON 715 de 15 pulgadas con montaje recto, garantizando potencia inmersiva.</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <h3 class="text-xl font-bold mb-4">Iluminación Inteligente</h3>
+          <p class="text-zinc-400">Despliegue visual con luminarias DMX, equipos Nebula Quad 14 y cableado certificado para transformar por completo la atmósfera de tu escenario.</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
+          <h3 class="text-xl font-bold mb-4">DJs Exclusivos</h3>
+          <p class="text-zinc-400">Contamos con más de 10 DJs profesionales a disposición que tocan en los mejores boliches de Mar del Plata, asegurando la selección musical perfecta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: MULTIMEDIA (CARRUSEL INTELIGENTE) -->
+    <section id="multimedia" class="min-h-[80vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900 relative">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center md:text-left">Últimos <span class="text-blue-500">Armados</span></h2>
+      
+      <!-- Contenedor de la Galería -->
+      <div id="galeria-carrusel" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[400px]">
+        
+        <!-- PRIMERA TANDA -->
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden">
+          <img src="/multimedia/imagen1.jpg" alt="Armado de evento Enora" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+        </div>
+        
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover">
+            <source src="/multimedia/video1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover">
+            <source src="/multimedia/video2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- SEGUNDA TANDA -->
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden">
+          <img src="/multimedia/imagen2.jpg" alt="Equipamiento Enora Eventos" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+        </div>
+        
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover">
+            <source src="/multimedia/video3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline class="w-full h-full object-cover">
+            <source src="/multimedia/video4.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+
+      <!-- Controles del Carrusel -->
+      <div class="flex justify-center items-center gap-6 mt-12">
+        <button id="btn-prev" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+        <div id="indicador-pagina" class="text-zinc-400 font-medium tracking-widest text-sm">1 / 2</div>
+        <button id="btn-next" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CONTACTO -->
+    <section id="contacto" class="min-h-[60vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900">
+      <h2 class="text-3xl md:text-5xl font-bold mb-8">Trabajemos <span class="text-blue-500">Juntos</span></h2>
+      <p class="text-zinc-400 mb-8 max-w-xl">
+        ¿Listo para llevar tu evento al siguiente nivel? Contáctanos por cualquiera de nuestros canales oficiales y te asesoraremos con el equipamiento ideal.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/message/LE24NNC3HHRFB1" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-8 rounded-xl text-center transition-colors">
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/enora.eventos?igsh=Y3BmNGlrODVwa3V3" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 text-white font-semibold py-4 px-8 rounded-xl text-center transition-opacity">
+          Instagram
+        </a>
+        <a href="mailto:contacto@enoraeventos.com.ar" class="bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-4 px-8 rounded-xl text-center transition-colors border border-zinc-700">
+          Correo Electrónico
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: UBICACIÓN Y ZONA DE COBERTURA -->
+    <section id="ubicacion" class="min-h-[60vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900">
+      <h2 class="text-3xl md:text-5xl font-bold mb-8">Nuestra <span class="text-blue-500">Cobertura</span></h2>
+      <p class="text-zinc-400 mb-10 max-w-2xl">
+        Ubicados en Mar del Plata, llevamos nuestra tecnología a toda la región para asegurar el éxito de tu evento. Llegamos a <strong>Necochea, Miramar, Chapadmalal, Batán, Balcarce, Sierra de los Padres, Coronel Vidal, Vivoratá y Villa Gesell</strong>.
+      </p>
+      
+      <div class="w-full h-80 bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-700 grayscale hover:grayscale-0 transition-all duration-500">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100570.67246581413!2d-57.63701620953935!3d-38.00537021571439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34ea3%3A0x310141349a1d5272!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- SCRIPT AVANZADO -->
+    <script>
+      const itemsCarrusel = document.querySelectorAll('.item-carrusel');
+      const btnPrev = document.getElementById('btn-prev');
+      const btnNext = document.getElementById('btn-next');
+      const indicador = document.getElementById('indicador-pagina');
+      let paginaActual = 0;
+
+      function renderizarCarrusel() {
+        const itemsPorPagina = window.innerWidth < 768 ? 2 : 3; 
+        const totalPaginas = Math.ceil(itemsCarrusel.length / itemsPorPagina);
+
+        if (paginaActual >= totalPaginas) paginaActual = 0;
+        if (paginaActual < 0) paginaActual = totalPaginas - 1;
+
+        const indiceInicio = paginaActual * itemsPorPagina;
+        const indiceFin = indiceInicio + itemsPorPagina;
+
+        indicador.textContent = `${paginaActual + 1} / ${totalPaginas}`;
+
+        itemsCarrusel.forEach((item, index) => {
+          item.classList.remove('flex', 'hidden', 'anim-fade');
+          
+          if (index >= indiceInicio && index < indiceFin) {
+            item.classList.add('flex');
+            void item.offsetWidth; 
+            item.classList.add('anim-fade');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      }
+
+      btnNext.addEventListener('click', () => {
+        paginaActual++;
+        renderizarCarrusel();
+      });
+
+      btnPrev.addEventListener('click', () => {
+        paginaActual--;
+        renderizarCarrusel();
+      });
+
+      window.addEventListener('resize', () => {
+        paginaActual = 0;
+        renderizarCarrusel();
+      });
+
+      renderizarCarrusel();
+
+      const btnMenu = document.getElementById('btn-menu');
+      const menuMovil = document.getElementById('menu-movil');
+      const enlacesMoviles = document.querySelectorAll('.enlace-movil');
+
+      btnMenu.addEventListener('click', () => {
+        menuMovil.classList.toggle('hidden');
+        menuMovil.classList.toggle('flex');
+      });
+
+      enlacesMoviles.forEach(enlace => {
+        enlace.addEventListener('click', () => {
+          menuMovil.classList.add('hidden');
+          menuMovil.classList.remove('flex');
+        });
+      });
+
+      const enlacesNav = document.querySelectorAll('.enlace-nav');
+      
+      function easeOutQuart(t, b, c, d) {
+        t /= d;
+        t--;
+        return -c * (t*t*t*t - 1) + b;
+      }
+
+      function smoothScroll(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (!targetSection) return;
+
+        const headerOffset = 80;
+        const targetPosition = targetSection.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - headerOffset;
+        const duration = 1500; 
+        let start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          const run = easeOutQuart(progress, startPosition, distance, duration);
+          window.scrollTo(0, run);
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          } else {
+            window.scrollTo(0, startPosition + distance);
+          }
+        }
+        window.requestAnimationFrame(step);
+      }
+
+      enlacesNav.forEach(enlace => {
+        enlace.addEventListener('click', smoothScroll);
+      });
+    </script>
+  </body>
+</html>
