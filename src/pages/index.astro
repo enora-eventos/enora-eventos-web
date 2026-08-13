@@ -4,20 +4,164 @@ import '../styles/global.css';
 
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enora Eventos | Sonido e Iluminación Profesional</title>
-    <style>
-      @keyframes fadeInScale {
-        from { opacity: 0; transform: scale(0.95); }
-        to { opacity: 1; transform: scale(1); }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- TÍTULO OPTIMIZADO CON PALABRAS CLAVE LOCALES -->
+  <title>Enora Eventos | Alquiler de Sonido e Iluminación en Mar del Plata | DJs y Fiestas</title>
+  
+  <!-- DESCRIPCIÓN SEO EXHAUSTIVA -->
+  <meta name="description" content="Empresa encargada del alquiler de sonido profesional, iluminación arquitectónica, pantallas LED y DJs para casamientos, 15 años, boliches y eventos corporativos en Mar del Plata, Miramar, Coronel Vidal y la costa atlántica. ¡Cotiza tu fecha hoy!" />
+  
+  <!-- PALABRAS CLAVE MASIVAS PARA BÚSQUEDAS LOCALES Y REGIONALES -->
+  <meta name="keywords" content="alquiler de sonido mar del plata, produccion de eventos mar del plata, iluminacion para eventos mar del plata, djs para fiestas mar del plata, alquiler de luces mar del plata, sonido y luces casamientos mdp, contratacion de sonido mar del plata, enora eventos, organizacion de eventos mar del plata, sonido para boliches mdp, tecnicos de sonido mar del plata, alquiler sonido miramar, sonido coronel vidal" />
+  
+  <!-- METADATOS DE GEOLOCALIZACIÓN Y CONTROL DE RASTREO -->
+  <meta name="geo.region" content="AR-B" />
+  <meta name="geo.placename" content="Mar del Plata" />
+  <meta name="geo.position" content="-38.0055;-57.5426" />
+  <meta name="ICBM" content="-38.0055, -57.5426" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- URL CANÓNICA -->
+  <link rel="canonical" href="https://www.enoraeventos.com.ar" />
+  <link rel="icon" type="image/png" href="/favicon.png?v=2" />
+
+  <!-- OPEN GRAPH / WHATSAPP / REDES SOCIALES -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.enoraeventos.com.ar" />
+  <meta property="og:title" content="Enora Eventos | Sonido e Iluminación Profesional en Mar del Plata" />
+  <meta property="og:description" content="Elevamos el nivel de tu evento. Alquiler de sonido, iluminación y DJs en Mar del Plata, Miramar y Coronel Vidal." />
+  <meta property="og:image" content="https://www.enoraeventos.com.ar/multimedia/imagen1.jpg" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- TWITTER CARDS -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Enora Eventos | Sonido e Iluminación en Mar del Plata" />
+  <meta name="twitter:description" content="Sonido, iluminación y DJs para eventos en Mar del Plata." />
+  <meta name="twitter:image" content="https://www.enoraeventos.com.ar/multimedia/imagen1.jpg" />
+
+  <!-- ESTILOS Y ANIMACIONES LOCALES -->
+  <style>
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .anim-fade {
+      animation: fadeInScale 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+
+  <!-- BLOQUE JSON-LD UNIFICADO (@GRAPH) CON TODAS LAS ENTIDADES Y REDES SOCIALES -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.enoraeventos.com.ar/#website",
+        "url": "https://www.enoraeventos.com.ar/",
+        "name": "Enora Eventos"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.enoraeventos.com.ar/#organization",
+        "name": "Enora Eventos",
+        "url": "https://www.enoraeventos.com.ar/",
+        "logo": "https://www.enoraeventos.com.ar/multimedia/imagen1.jpg",
+        "sameAs": [
+          "https://www.instagram.com/enora.eventos",
+          "https://www.tiktok.com/@enora.eventos"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.enoraeventos.com.ar/#localbusiness",
+        "isPartOf": { "@id": "https://www.enoraeventos.com.ar/#organization" },
+        "name": "Enora Eventos",
+        "image": "https://www.enoraeventos.com.ar/multimedia/imagen1.jpg",
+        "url": "https://www.enoraeventos.com.ar",
+        "telephone": "+5492235015848",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mar del Plata",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -38.0055,
+          "longitude": -57.5426
+        },
+        "areaServed": [
+          "Mar del Plata",
+          "Miramar",
+          "Necochea",
+          "Chapadmalal",
+          "Balcarce",
+          "Coronel Vidal",
+          "Vivoratá",
+          "Villa Gesell"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Alquiler de Sonido e Iluminación Profesional",
+              "description": "Servicio integral de audio, luces DMX y DJs para fiestas, casamientos y eventos en Mar del Plata y la costa."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Producción de Eventos",
+              "description": "Logística técnica, montaje de escenarios, pantallas y soporte técnico profesional para eventos corporativos y sociales."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios ofrece Enora Eventos en Mar del Plata?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ofrecemos alquiler de sonido e iluminación profesional y para pistas de baile, servicio de DJs especializados y soporte técnico integral para casamientos, cumpleaños de 15, fiestas y eventos corporativos en Mar del Plata y la costa atlántica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo contratar sonido e iluminación para mi fiesta en Mar del Plata?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes contactarnos directamente a través de nuestro sitio web o canales de WhatsApp para recibir una cotización personalizada según la cantidad de invitados, tipo de salón y necesidades técnicas de tu evento."
+            }
+          }
+        ]
       }
-      .anim-fade {
-        animation: fadeInScale 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      }
-    </style>
-  </head>
+    ]
+  }
+  </script>
+</head>
   <body class="bg-zinc-950 text-white font-sans antialiased">
     
     <!-- BARRA DE NAVEGACIÓN -->
@@ -54,7 +198,7 @@ import '../styles/global.css';
         ENORA <span class="text-blue-500">EVENTOS</span>
       </h1>
       <p class="text-lg md:text-2xl text-zinc-400 max-w-2xl mb-10">
-        Alquiler de sonido e iluminación profesional de alta calidad en Mar del Plata. Elevamos el nivel de tu evento con tecnología de vanguardia.
+        Alquiler de sonido e iluminación profesional en Mar del Plata y alrededores. Elevá tu evento con los mejores equipos.
       </p>
       <a href="#contacto" class="enlace-nav bg-white text-black font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">
         Solicitar Presupuesto
@@ -67,57 +211,62 @@ import '../styles/global.css';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
           <h3 class="text-xl font-bold mb-4">Sonido Profesional</h3>
-          <p class="text-zinc-400">Sistemas de audio activo de alta fidelidad, incluyendo altavoces JBL EON 715 de 15 pulgadas con montaje recto, garantizando potencia inmersiva.</p>
+          <p class="text-zinc-400">Sistemas de audio de alta fidelidad, incluyendo altavoces JBL & AudioCenter + Subwoofers, garantizando potencia inmersiva.</p>
         </div>
         <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
           <h3 class="text-xl font-bold mb-4">Iluminación Inteligente</h3>
-          <p class="text-zinc-400">Despliegue visual con luminarias DMX, equipos Nebula Quad 14 y cableado certificado para transformar por completo la atmósfera de tu escenario.</p>
+          <p class="text-zinc-400">Despliegue visual con luminarias DMX, equipos Tecshow y BigDipper para transformar por completo la atmósfera.</p>
         </div>
         <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 hover:border-zinc-700 transition-colors">
           <h3 class="text-xl font-bold mb-4">DJs Exclusivos</h3>
-          <p class="text-zinc-400">Contamos con más de 10 DJs profesionales a disposición que tocan en los mejores boliches de Mar del Plata, asegurando la selección musical perfecta.</p>
+          <p class="text-zinc-400">DJs profesionales que tocan en los mejores boliches de Mar del Plata, asegurando la selección musical perfecta.</p>
         </div>
       </div>
     </section>
 
-    <!-- SECCIÓN: MULTIMEDIA (CARRUSEL INTELIGENTE) -->
-    <section id="multimedia" class="min-h-[80vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900 relative">
-      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center md:text-left">Últimos <span class="text-blue-500">Armados</span></h2>
-      
-      <!-- Contenedor de la Galería -->
+    <!-- SECCIÓN: MULTIMEDIA (CARRUSEL) -->
+    <section id="multimedia" class="min-h-[80vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12">Últimos <span class="text-blue-500">Eventos</span></h2>
+
       <div id="galeria-carrusel" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[400px]">
         
-        <!-- PRIMERA TANDA -->
-        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden">
-          <img src="/multimedia/imagen1.jpg" alt="Armado de evento Enora" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-        </div>
-        
+        <!-- PÁGINA 1 -->
+        <!-- 1. Video 3 -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline class="w-full h-full object-cover">
-            <source src="/multimedia/video1.mp4" type="video/mp4">
+          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
+            <source src="/multimedia/video3.mp4" type="video/mp4" />
           </video>
         </div>
 
+        <!-- 2. Imagen 2 -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline class="w-full h-full object-cover">
-            <source src="/multimedia/video2.mp4" type="video/mp4">
+          <img src="/multimedia/imagen2.jpg" alt="Armado Enora Eventos" class="w-full h-full object-cover">
+        </div>
+
+        <!-- 3. Video 2 optimizado -->
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
+            <source src="/multimedia/video2_opt.mp4" type="video/mp4" />
           </video>
         </div>
 
-        <!-- SEGUNDA TANDA -->
-        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden">
-          <img src="/multimedia/imagen2.jpg" alt="Equipamiento Enora Eventos" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-        </div>
-        
+        <!-- PÁGINA 2 -->
+        <!-- 4. Video 4 (Optimizado) -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline class="w-full h-full object-cover">
-            <source src="/multimedia/video3.mp4" type="video/mp4">
+          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
+            <source src="/multimedia/video4_opt.mp4" type="video/mp4" />
           </video>
         </div>
 
+        <!-- 5. Imagen 1 -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline class="w-full h-full object-cover">
-            <source src="/multimedia/video4.mp4" type="video/mp4">
+          <img src="/multimedia/imagen1.jpg" alt="Armado Enora Eventos" class="w-full h-full object-cover">
+        </div>
+
+        <!-- 6. Video 1 -->
+        <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
+          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
+            <source src="/multimedia/video1_opt.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -125,11 +274,11 @@ import '../styles/global.css';
 
       <!-- Controles del Carrusel -->
       <div class="flex justify-center items-center gap-6 mt-12">
-        <button id="btn-prev" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95">
+        <button id="btn-prev" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
         </button>
         <div id="indicador-pagina" class="text-zinc-400 font-medium tracking-widest text-sm">1 / 2</div>
-        <button id="btn-next" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95">
+        <button id="btn-next" class="bg-zinc-900 border border-zinc-700 hover:bg-zinc-800 text-white p-4 rounded-full transition-all hover:scale-105 active:scale-95 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
         </button>
       </div>
@@ -139,9 +288,8 @@ import '../styles/global.css';
     <section id="contacto" class="min-h-[60vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900">
       <h2 class="text-3xl md:text-5xl font-bold mb-8">Trabajemos <span class="text-blue-500">Juntos</span></h2>
       <p class="text-zinc-400 mb-8 max-w-xl">
-        ¿Listo para llevar tu evento al siguiente nivel? Contáctanos por cualquiera de nuestros canales oficiales y te asesoraremos con el equipamiento ideal.
+        ¿Listo para llevar tu evento al siguiente nivel? Contáctanos por cualquiera de nuestros canales oficiales.
       </p>
-      
       <div class="flex flex-col sm:flex-row gap-4">
         <a href="https://wa.me/message/LE24NNC3HHRFB1" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-8 rounded-xl text-center transition-colors">
           WhatsApp
@@ -155,27 +303,21 @@ import '../styles/global.css';
       </div>
     </section>
 
-    <!-- SECCIÓN: UBICACIÓN Y ZONA DE COBERTURA -->
+    <!-- SECCIÓN: UBICACIÓN -->
     <section id="ubicacion" class="min-h-[60vh] flex flex-col justify-center max-w-6xl mx-auto px-6 py-24 border-t border-zinc-900">
       <h2 class="text-3xl md:text-5xl font-bold mb-8">Nuestra <span class="text-blue-500">Cobertura</span></h2>
       <p class="text-zinc-400 mb-10 max-w-2xl">
-        Ubicados en Mar del Plata, llevamos nuestra tecnología a toda la región para asegurar el éxito de tu evento. Llegamos a <strong>Necochea, Miramar, Chapadmalal, Batán, Balcarce, Sierra de los Padres, Coronel Vidal, Vivoratá y Villa Gesell</strong>.
+        Ubicados en Mar del Plata, llevamos tecnología a toda la región: <strong>Necochea, Miramar, Chapadmalal, Batán, Balcarce, Sierra de los Padres, Coronel Vidal, Vivoratá y Villa Gesell</strong>.
       </p>
-      
       <div class="w-full h-80 bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-700 grayscale hover:grayscale-0 transition-all duration-500">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100570.67246581413!2d-57.63701620953935!3d-38.00537021571439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34ea3%3A0x310141349a1d5272!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
-          width="100%" 
-          height="100%" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </section>
 
-    <!-- SCRIPT AVANZADO -->
+    <!-- SCRIPT DE PAGINACIÓN OPTIMIZADO PARA EVITAR FLICKER EN SCROLL MÓVIL -->
     <script>
       // @ts-nocheck
       const itemsCarrusel = document.querySelectorAll('.item-carrusel');
@@ -188,8 +330,8 @@ import '../styles/global.css';
         const itemsPorPagina = window.innerWidth < 768 ? 2 : 3; 
         const totalPaginas = Math.ceil(itemsCarrusel.length / itemsPorPagina);
 
-        if (paginaActual >= totalPaginas) paginaActual = 0;
-        if (paginaActual < 0) paginaActual = totalPaginas - 1;
+        if (paginaActual >= totalPaginas) paginaActual = totalPaginas - 1;
+        if (paginaActual < 0) paginaActual = 0;
 
         const indiceInicio = paginaActual * itemsPorPagina;
         const indiceFin = indiceInicio + itemsPorPagina;
@@ -199,34 +341,57 @@ import '../styles/global.css';
         }
 
         itemsCarrusel.forEach((item, index) => {
-          item.classList.remove('flex', 'hidden', 'anim-fade');
-          
+          const video = item.querySelector('video');
+
           if (index >= indiceInicio && index < indiceFin) {
-            item.classList.add('flex');
-            void item.offsetWidth; 
-            item.classList.add('anim-fade');
+            if (!item.classList.contains('flex')) {
+              item.classList.remove('hidden');
+              item.classList.add('flex', 'anim-fade');
+            }
+            if (video && video.paused) {
+              video.play().catch(() => {});
+            }
           } else {
-            item.classList.add('hidden');
+            if (!item.classList.contains('hidden')) {
+              item.classList.remove('flex', 'anim-fade');
+              item.classList.add('hidden');
+            }
+            if (video && !video.paused) {
+              video.pause();
+            }
           }
         });
       }
 
       if (btnNext) {
         btnNext.addEventListener('click', () => {
-          paginaActual++;
+          const itemsPorPagina = window.innerWidth < 768 ? 2 : 3;
+          const totalPaginas = Math.ceil(itemsCarrusel.length / itemsPorPagina);
+          paginaActual = (paginaActual + 1) % totalPaginas;
           renderizarCarrusel();
         });
       }
 
       if (btnPrev) {
         btnPrev.addEventListener('click', () => {
-          paginaActual--;
+          const itemsPorPagina = window.innerWidth < 768 ? 2 : 3;
+          const totalPaginas = Math.ceil(itemsCarrusel.length / itemsPorPagina);
+          paginaActual = (paginaActual - 1 + totalPaginas) % totalPaginas;
           renderizarCarrusel();
         });
       }
 
+      // CORRECCIÓN: Solo re-renderizar si cambia el breakpoint de pantalla real (evita el parpadeo por scroll móvil)
+      let anchoVentanaAnterior = window.innerWidth;
       window.addEventListener('resize', () => {
-        paginaActual = 0;
+        const anchoActual = window.innerWidth;
+        if ((anchoVentanaAnterior < 768 && anchoActual >= 768) || (anchoVentanaAnterior >= 768 && anchoActual < 768)) {
+          anchoVentanaAnterior = anchoActual;
+          renderizarCarrusel();
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
         renderizarCarrusel();
       });
 
@@ -270,7 +435,7 @@ import '../styles/global.css';
         const targetPosition = targetSection.getBoundingClientRect().top;
         const startPosition = window.pageYOffset;
         const distance = targetPosition - headerOffset;
-        const duration = 1500; 
+        const duration = 1200; 
         let start = null;
 
         function step(timestamp) {
