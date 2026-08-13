@@ -233,9 +233,16 @@ import '../styles/global.css';
         <!-- PÁGINA 1 -->
         <!-- 1. Video 3 -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
-            <source src="/multimedia/video3.mp4" type="video/mp4" />
-          </video>
+          <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          preload="metadata" 
+          poster="/multimedia/imagen1.jpg" 
+          class="w-full h-full object-cover video-elemento">
+          <source src="/multimedia/video3.mp4" type="video/mp4" />
+        </video>
         </div>
 
         <!-- 2. Imagen 2 -->
@@ -245,17 +252,31 @@ import '../styles/global.css';
 
         <!-- 3. Video 2 optimizado -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
-            <source src="/multimedia/video2_opt.mp4" type="video/mp4" />
-          </video>
+          <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          preload="metadata" 
+          poster="/multimedia/imagen1.jpg" 
+          class="w-full h-full object-cover video-elemento">
+          <source src="/multimedia/video2_opt.mp4" type="video/mp4" />
+        </video>
         </div>
 
         <!-- PÁGINA 2 -->
         <!-- 4. Video 4 (Optimizado) -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
-            <source src="/multimedia/video4_opt.mp4" type="video/mp4" />
-          </video>
+          <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          preload="metadata" 
+          poster="/multimedia/imagen1.jpg" 
+          class="w-full h-full object-cover video-elemento">
+          <source src="/multimedia/video4_opt.mp4" type="video/mp4" />
+        </video>
         </div>
 
         <!-- 5. Imagen 1 -->
@@ -265,9 +286,16 @@ import '../styles/global.css';
 
         <!-- 6. Video 1 -->
         <div class="item-carrusel hidden aspect-[4/5] bg-zinc-800 rounded-2xl flex-col items-center justify-center border border-zinc-700 overflow-hidden relative">
-          <video autoplay loop muted playsinline preload="metadata" class="w-full h-full object-cover">
-            <source src="/multimedia/video1_opt.mp4" type="video/mp4" />
-          </video>
+          <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          preload="metadata" 
+          poster="/multimedia/imagen1.jpg" 
+          class="w-full h-full object-cover video-elemento">
+          <source src="/multimedia/video1_opt.mp4" type="video/mp4" />
+        </video>
         </div>
 
       </div>
@@ -454,6 +482,15 @@ import '../styles/global.css';
 
       enlacesNav.forEach(enlace => {
         enlace.addEventListener('click', smoothScroll);
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('.video-elemento');
+        videos.forEach(video => {
+          video.play().catch(error => {
+            console.log("Autoplay bloqueado por el navegador, intentando forzar...", error);
+          });
+        });
       });
     </script>
   </body>
